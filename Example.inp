@@ -148,4 +148,12 @@ modelInput.disp{1}.step =  [      1.0;     0.1;       1.0;         0;      1.0];
 modelInput.disp{1}.lower = [    -45.0;    25.0;       0.1;       0.0;     -5.0];    % lower bounds on m
 modelInput.disp{1}.upper = [    -30.0;    50.0;     -50.0;       0.0;     30.0];    % upper bounds on m
 
+% Distributed Shear Zone (Custom made) 'K' for pCDM
+%                                   X        Y      Depth     OmegaX    OmegaY    OmegaZ      DV_X      DV_Y     DV_Z
+modelInput.pcdm{1}.start = [     -750;    5000;      3900;        69;      -28;     -140;     -3e7;     -5e7;    -9e7;];    % starting model
+modelInput.pcdm{1}.step =  [       25;      25;       100;         2;        2;        2;     1e05;     1e05;    1e05;];    % initial maximium step size
+modelInput.pcdm{1}.lower = [    -1500;    4500;       100;      -180;     -180;     -180;     -7e7;     -9e7;    -2e8;];    % lower bounds on m
+modelInput.pcdm{1}.upper = [     1500;    5500;      4500;       180;      180;      180;     -4e6;     -1e7;    -1e7;];    % upper bounds on m
+ 
+
 out_extension='';
