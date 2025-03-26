@@ -7,5 +7,5 @@ Usage:
 1. Add the whole software into Matlab path;
 2. Run testGBISPath to test the install;
 3. Customize your input file (*.inp);
-   3.1. Model key 'K' for pCDM; 
-4. Run GBISrun to start. 
+4. Model key 'K' for pCDM; 
+5. Run GBISrun to start. 
